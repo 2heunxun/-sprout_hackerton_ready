@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpUs</title>
+    <link rel="stylesheet" href="css/css_2.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="script/chatbot.js" defer></script>
+    <script src="script/apikey.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu-icon">&#9776;</div>
+            <h1>HelpUs</h1>
+            <div class="search-icon">&#128269;</div>
+        </header>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <select id="age" name="age">
+                    <option value="나이">나이</option>
+                    <option value="1세">1세</option>
+                <option value="2세">2세</option>
+                <option value="3세">3세</option>
+                <option value="4세">4세</option>
+                <option value="5세">5세</option>
+                <option value="6세">6세</option>
+                <option value="7세">7세</option>
+                <option value="8세">8세</option>
+                <option value="9세">9세</option>
+                <option value="10세">10세</option>
+                <option value="11세">11세</option>
+                <option value="12세">12세</option>
+                <option value="13세">13세</option>
+                <option value="14세">14세</option>
+                <option value="15세">15세</option>
+                <option value="16세">16세</option>
+                <option value="17세">17세</option>
+                <option value="18세">18세</option>
+                <option value="19세">19세</option>
+                <option value="20세">20세</option>
+                <option value="21세">21세</option>
+                <option value="22세">22세</option>
+                <option value="23세">23세</option>
+                <option value="24세">24세</option>
+                <option value="25세">25세</option>
+                <option value="26세">26세</option>
+                <option value="27세">27세</option>
+                <option value="28세">28세</option>
+                <option value="29세">29세</option>
+                <option value="30세">30세</option>
+                <option value="31세">31세</option>
+                <option value="32세">32세</option>
+                <option value="33세">33세</option>
+                <option value="34세">34세</option>
+                <option value="35세">35세</option>
+                <option value="36세">36세</option>
+                <option value="37세">37세</option>
+                <option value="38세">38세</option>
+                <option value="39세">39세</option>
+                <option value="40세">40세</option>
+                <option value="41세">41세</option>
+                <option value="42세">42세</option>
+                <option value="43세">43세</option>
+                <option value="44세">44세</option>
+                <option value="45세">45세</option>
+                <option value="46세">46세</option>
+                <option value="47세">47세</option>
+                <option value="48세">48세</option>
+                <option value="49세">49세</option>
+                <option value="50세">50세</option>
+                <option value="51세">51세</option>
+                <option value="52세">52세</option>
+                <option value="53세">53세</option>
+                <option value="54세">54세</option>
+                <option value="55세">55세</option>
+                <option value="56세">56세</option>
+                <option value="57세">57세</option>
+                <option value="58세">58세</option>
+                <option value="59세">59세</option>
+                <option value="60세">60세</option>
+                <option value="61세">61세</option>
+                <option value="62세">62세</option>
+                <option value="63세">63세</option>
+                <option value="64세">64세</option>
+                <option value="65세">65세</option>
+                <option value="66세">66세</option>
+                <option value="67세">67세</option>
+                <option value="68세">68세</option>
+                <option value="69세">69세</option>
+                <option value="70세">70세</option>
+                <option value="71세">71세</option>
+                <option value="72세">72세</option>
+                <option value="73세">73세</option>
+                <option value="74세">74세</option>
+                <option value="75세">75세</option>
+                <option value="76세">76세</option>
+                <option value="77세">77세</option>
+                <option value="78세">78세</option>
+                <option value="79세">79세</option>
+                <option value="80세">80세</option>
+                <option value="81세">81세</option>
+                <option value="82세">82세</option>
+                <option value="83세">83세</option>
+                <option value="84세">84세</option>
+                <option value="85세">85세</option>
+                <option value="86세">86세</option>
+                <option value="87세">87세</option>
+                <option value="88세">88세</option>
+                <option value="89세">89세</option>
+                <option value="90세">90세</option>
+                <option value="91세">91세</option>
+                <option value="92세">92세</option>
+                <option value="93세">93세</option>
+                <option value="94세">94세</option>
+                <option value="95세">95세</option>
+                <option value="96세">96세</option>
+                <option value="97세">97세</option>
+                <option value="98세">98세</option>
+                <option value="99세">99세</option>
+                <option value="100세">100세</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select id="grade" name="grade">
+                    <option value="default">장애 정도</option>
+                    <option value="중증(1~3급)">중증(1~3급)</option>
+                    <option value="경증(4~6급)">경증(4~6급)</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select id="type" name="type">
+                    <option value="default">장애유형</option>
+                    <option value="지체장애">지체장애</option>
+                    <option value="뇌병변장애">뇌병변장애</option>
+                    <option value="시각장애">시각장애</option>
+                    <option value="청각장애">청각장애</option>
+                    <option value="지적장애">지적장애</option>
+                    <option value="자폐성장애">자폐성장애</option>
+                    <option value="정신장애">정신장애</option>
+                    <option value="안면장애">안면장애</option>
+                    <option value="신장장애">신장장애</option>
+                    <option value="심장장애">심장장애</option>
+                    <option value="간장애">간장애</option>
+                    <option value="뇌전증장애">뇌전증장애</option>
+                    <option value="호흡기장애">호흡기장애</option>
+                    <option value="장요루장애">장요루장애</option>
+                    <option value="기타장애">기타장애</option>
+                </select>
+            </div>
+            <button class="all-services">복지서비스 전체선택</button>
+            <button class="none-services">복지서비스 선택해제</button>
+        </div>
+
+        <div class="services">
+            <button class="service" data-task="life">
+                <img src="image/image1.png" alt="생활안정" class="service-icon">
+                <div class="service-text">생활안정</div>
+            </button>
+            <button class="service" data-task="family">
+                <img src="image/image2.png" alt="가족지원" class="service-icon">
+                <div class="service-text">가족지원</div>
+            </button>
+            <button class="service" data-task="culture">
+                <img src="image/image3.png" alt="문화여가" class="service-icon">
+                <div class="service-text">문화여가</div>
+            </button>
+            <button class="service" data-task="employ">
+                <img src="image/image4.png" alt="고용" class="service-icon">
+                <div class="service-text">고용</div>
+            </button>
+            <button class="service" data-task="residential">
+                <img src="image/image5.png" alt="거주" class="service-icon">
+                <div class="service-text">거주</div>
+            </button>
+            <button class="service" data-task="healthcare">
+                <img src="image/image6.png" alt="건강의료" class="service-icon">
+                <div class="service-text">건강의료</div>
+            </button>
+            <button class="service" data-task="convenience">
+                <img src="image/image7.png" alt="편의" class="service-icon">
+                <div class="service-text">편의</div>
+            </button>
+            <button class="service" data-task="assistive-devices">
+                <img src="image/image8.png" alt="보조기기" class="service-icon">
+                <div class="service-text">보조기기</div>
+            </button>
+        </div>
+        
+
+        <div class="highlight-slider">
+            <div class="highlight-slides">
+                <div class="highlight-slide">
+                    <span>“제일 많이 찾는 혜택”</span>
+                    <div class="highlight-content">장애인 연금 및 수당,
+                        <br>보조기기 지원,<br>
+                        장애인 주택 개조 및 주거 지원
+                    </div>
+                </div>
+                <div class="highlight-slide">
+                    <span>“인기 서비스”</span>
+                    <div class="highlight-content"> 기존주택등 매입임대주택 지원사업,
+                        <br>성인발달장애인 주간활동서비스,<br>
+                        긴급복지 생계지원
+                    </div>
+                </div>
+                <div class="highlight-slide">
+                    <span>“최신 서비스”</span>
+                    <div class="highlight-content">장애아보육료지원,
+                        <br>의료급여 틀니 · 치과 임플란트,<br>
+                        아이돌봄지원사업
+                    </div>
+                </div>
+                <div class="highlight-slide">
+                    <span>“쉬운 복지 정보”</span>
+                    <div class="highlight-content">쉬운 배달앱 사용법,
+                        <br>쉬운 정보로 만나는 6.1 지방 선거,『우리 동네를 부탁해』
+                    </div>
+                </div>
+                <div class="highlight-slide">
+                    <span>“장애인 복지서비스 이용 경험 여부”</span>
+                    <div class="highlight-content">장애인 연금 "15%"<br>장애수당 "21%"<br>의료재활 서비스 "10%"</div>
+                </div>
+            </div>
+        </div>
+        <button class="chatbot-toggler">
+            <span class="material-symbols-rounded">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <div class="chatbot">
+            <header class="chathead">
+              <h2>헬퍼스 도우미</h2>
+              <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+              <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>안녕하세요~👋<br>무엇을 도와드릴까요?</p>
+              </li>
+            </ul>
+            <div class="chat-input">
+              <textarea placeholder="궁금하신점을 여쭤보세요" spellcheck="false" required></textarea>
+              <span id="send-btn" class="material-symbols-rounded">send</span>
+            </div>
+           </div>
+        <div class="tasks">
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>

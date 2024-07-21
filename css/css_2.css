@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ff6f61;
+    color: white;
+}
+
+.menu-icon, .search-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ffdddd;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.filter-group label {
+    font-size: 14px;
+}
+
+.filter-group select {
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ff6f61;
+}
+
+.filter {
+    background-color: #ff6f61;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.all-services, .none-services {
+    background-color: white;
+    border: 1px solid #ff6f61;
+    color: #ff6f61;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+    font-weight: bold;
+    flex:1;
+}
+
+.all-services:hover, .none-services:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.service {
+    background-color: #ffffff; /* 버튼 배경색 흰색 */
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #e0e0e0; /* 기본 테두리 색상 */
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s; /* 부드러운 전환 효과 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-icon {
+    width: 40px; /* 이미지 크기 조정 */
+    height: 40px;
+    object-fit: cover;
+}
+
+.service-text {
+    font-size: 14px;
+}
+
+.service.selected {
+    background-color: #d0eaff; /* 선택된 버튼 배경색 */
+    border-color: #007bff; /* 선택된 버튼 테두리 색상 */
+}
+
+.service.selected .service-text {
+    color: #007bff; /* 선택된 버튼의 텍스트 색상 */
+}
+
+.highlight-slider {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 10px;
+    background-color: #ffe6e6;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.highlight-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.highlight-slide {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.slide-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slide-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.slide-indicator.active {
+    background-color: black;
+}
+
+.highlight-content {
+    background-color: #ffdddd;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.task-icon {
+    width: 40px; /* 이미지 너비 */
+    height: 40px; /* 이미지 높이 */
+    object-fit: cover; /* 이미지의 비율을 유지하면서 영역에 맞게 조정 */
+    margin-right:10px;
+}
+
+.task-text {
+    flex-grow: 1;
+}
+
+.task-life {
+    background-color: #ff6f61;
+}
+.task-family {
+    background-color: #ff6f61;
+}
+
+.task-culture {
+    background-color: #ff6f61;
+}
+
+.task-employ {
+    background-color: #ff6f61;
+}
+
+.task-residential {
+    background-color: #ff6f61;
+}
+
+.task-healthcare {
+    background-color: #ff6f61;
+}
+
+.task-convenience {
+    background-color: #ff6f61;
+}
+
+.task-assistive-devices {
+    background-color: #ff6f61;
+}
+
